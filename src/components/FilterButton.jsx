@@ -9,7 +9,7 @@ const FilterButton = () => {
         dispatch(filterTodos(filter))
     }
   return (
-    <div className="flex space-x-4 items-center">
+    <div className="flex space-x-4 items-center mb-4">
         <select
             value={currentFilter}
             onChange={(e) => handleFilter(e.target.value)}
@@ -19,7 +19,7 @@ const FilterButton = () => {
             <option value="INCOMPLETE">Incomplete</option>
         </select>
 
-        <button onClick={() => dispatch(markAllCompleted())} className="text-sm px-2 py-1 bg-purple-500 text-white ml-2 rounded hover:bg-purple-500">
+        <button onClick={() => dispatch(markAllCompleted())} className="text-sm px-2 py-1 bg-purple-400 text-white ml-2 rounded hover:bg-purple-500">
             Mark All Completed
         </button>
     </div>
