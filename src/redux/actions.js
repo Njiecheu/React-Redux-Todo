@@ -31,7 +31,7 @@ export const filterTodos = (filter) => ({
 });
 
 export const markAllCompleted = () => ({
-    type: MARK_ALL_COMPLETED
+    type: MARK_ALL_COMPLETED,
 })
 
 export const updateSearchTerm = (searchTerm) => ({
